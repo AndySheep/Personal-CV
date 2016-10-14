@@ -1,0 +1,75 @@
+/* 整体布局 */
+body{
+	min-width: 1000px;
+}
+.g-wrap{
+	margin: 0 auto;
+	width: 1000px;
+	padding: 20px;
+}
+hr{
+	margin: 40px 0;
+}
+/* /整体布局 */
+/* 头部信息 */
+header{
+	position: relative;
+	height: 320px;
+}
+header>img{
+	width: 120px;
+	border-radius: 50%;
+}
+header *:not(i){
+	display: inline-block;
+}
+header>strong{
+	position: absolute;
+	top: 200px;
+	left: 0;
+}
+header>em{
+	position: absolute;
+	top: 260px;
+	left: 0;
+}
+header>a{
+	position: absolute;
+	top: 285px;
+	left: 0;
+}
+header>div{
+	position: absolute;
+	top: 0;
+	left: 240px;
+}
+/* clearfix */
+.clearfix:after {
+   content: "."; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.clearfix {zoom: 1;} /* 针对 IE 不支持 :after */
+/* /头部信息 */
+/* 导航 */
+nav *:not(i){
+	display: inline-block;
+}
+/* /导航 */
+/* 求职目标 */
+#CareerObj{
+	margin-bottom: 50px;
+}
+/* /求职目标 */
+/* 技能路线 */
+#Skills ul li{
+	display: inline-block;
+}
+/* /技能路线 */
+/* 职业生涯 */
+#JobCareer ul li{
+	display: inline-block;
+}
+/* /职业生涯 */
