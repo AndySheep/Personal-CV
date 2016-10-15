@@ -3,11 +3,6 @@
 	border: 0 5px solid #333;
 	box-shadow: 2px 0 5px 5px #666,-2px 0 3px 3px #666;
 }
-.shadow:hover{
-	background-color: #ccf;
-	border: 0 2px solid #333;
-	box-shadow: 1px 0 2px 2px #666,-1px 0 2px 2px #666;
-}
 /* /整体边框样式 */
 /* 头部信息样式 */
 header>img{
@@ -192,7 +187,7 @@ nav ul li:hover{
 }
 #JobCareer ul li{
 	align-self: stretch;
-	width: 280px;
+	width: 300px;
 }
 #JobCareer ul li:first-child{
 	margin-right: 40px;
