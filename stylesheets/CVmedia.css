@@ -3,7 +3,6 @@
 		min-width: 740px;
 	}
 	.g-wrap{
-		margin: 0 auto;
 		width: 740px;
 		padding: 2px;
 	}
@@ -77,9 +76,7 @@
 		min-width: 610px;
 	}
 	.g-wrap{
-		margin: 0 auto;
 		width: 610px;
-		padding: 2px;
 	}
 	h1{font-size: 22px;}
 	h2{font-size: 16px;}
@@ -159,5 +156,89 @@
 	}
 	#SelfAssessment ul li{
 		margin-bottom: 10px;
+	}
+}
+@media all and (max-width: 480px){
+	body{
+		min-width: 440px;
+	}
+	.g-wrap{
+		width: 440px;
+	}
+	h1{font-size: 18px;}
+	h2{font-size: 14px;}
+	strong,a,li,span,p{font-size: 12px;}
+	i{font-size: 10px;}
+	hr{
+		margin: 20px 0;
+	}
+	/* 头部信息 */
+	header{
+		height: 260px;
+	}
+	header>img{
+		width: 80px;
+	}
+	header>strong{
+		top: 120px;
+		margin-left: 48px;
+		font-size: 18px;
+	}
+	header>strong i{
+		text-indent: -2px;
+	}
+	header>em{
+		top: 160px;
+		margin-left: 32px;
+	}
+	header>a{
+		top: 180px;
+		text-indent: 10px;
+	}
+	header>div{
+		left: 150px;
+	}
+	header>div ul li{
+		margin: 0 10px 5px 0;
+	}
+	header>div ul li:nth-child(5){
+		margin: 0 10px 5px 0;
+	}
+	header>div ul li:nth-child(9) img,header>div ul li:nth-child(10) img{
+		display: none;
+	}
+	header>div ul li span{
+		display: none;
+	}
+	/* 导航 */
+	nav ul{
+		height: 60px;
+	}
+	nav ul li{
+		width: 80px;
+		height: 50px;
+	}
+	/* 技能路线 */
+	.SkillList li:nth-child(4),.SkillList li:nth-child(6){
+		margin-right: 10px;
+	}
+	.SkillList li:nth-child(7){
+		width: 110px;
+		height: 30px;
+		overflow: hidden;
+	}
+	.SkillTime li:nth-child(1){
+		margin-right: 100px;
+	}
+	.SkillTime li:nth-child(2){
+		margin-right: 85px;
+	}
+	/* 职业生涯 */
+	#JobCareer ul li{
+		width: 150px;
+		word-break: break-all;
+	}
+	#JobCareer ul li{
+		margin-right: 8px;
 	}
 }
