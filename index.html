@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>徐超--个人简历</title>
+	<meta name="Keywords" content="前端开发工程师 、前端、FE、求职简历">
+	<meta name="description" content="我是一名前端开发工程师，如果你们正在招聘这样一个职位请联系我吧！">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/CVreset.css">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/CVlayout.css">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/CVstyle.css">
-<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
-<!-- 	<link rel="stylesheet" href="https://use.fontawesome.com/defe32ecf5.css">
-	<script src="https://use.fontawesome.com/d78f530e0f.js"></script> -->
+	<link rel="stylesheet" href="./stylesheets/animate.css"><link rel="stylesheet" href="./stylesheets/CVmedia.css">
 </head>
 <body>
 	<div class="g-wrap">
@@ -18,7 +19,7 @@
 			<strong>徐 超<i>Andy Xu</i></strong>
 			<em><a href="tel:15720806577" title="电话联系我吧！">15720806577</a></em>
 			<a href="xch5981015@163.com" title="Email联系我吧！">xch5981015@163.com</a>
-			<div class="clearfix">
+			<div>
 				<h1>个人信息:<i>Personal Info:</i></h1>
 				<ul>
 					<li>男<i>Male</i></li>
@@ -27,8 +28,10 @@
 					<li>4年工作经验（非前端）<i>4 Years' Experience</i></li>
 					<li>江苏南京<i>Nanjing ,Jiangsu Province</i></li>
 					<li>本科<i>Bachelor</i></li>
-					<li>中国矿业大学（2008.9~2012.6）<i>China University of Mining and Technology</i></li>
-					<li>机械工程及自动化专业<i>Mechanical engineering and automation</i></li>
+					<li>中国矿业大学（2008.9~2012.6）<span>&gt;&gt;&gt;</span><i>China University of Mining and Technology</i></li>
+					<li>机械工程及自动化专业<span>&gt;&gt;&gt;</span><i>Mechanical engineering and automation</i></li>
+					<li><img src="images/xuewei.jpg" alt="学位证书"></li>
+					<li><img src="images/biye.jpg" alt="毕业证书"></li>
 				</ul>
 			</div>
 		</header>
@@ -74,7 +77,7 @@
 					<li>根据工作需要学习其他的框架<i>Learn other frameworks according to the needs</i></li>
 				</ul>
 				<!-- 技能进展动画 -->
-				<canvas id="SkillMap" width="600" height="20"></canvas>
+				<div class="Map Skill"></div>
 				<ul class="SkillTime">
 					<li>掌握<i>Know well</i></li>
 					<li>在学<i>Learnning</i></li>
@@ -97,7 +100,7 @@
 					<li>前端开发工程师<i>FE Developer</i></li>
 				</ul>
 				<!-- 职业生涯进展动画 -->
-				<canvas id="CareerMap" width="600" height="20"></canvas>
+				<div class="Map Career"></div>
 				<ul>
 					<li>2012.8-2016.6</li>
 					<li>2016.7-2016.10</li>
@@ -134,12 +137,7 @@
 		</section>
 		<!-- /主体内容 -->
 	</div>
-	<script type="text/javascript">
-		//浏览器类型检测，低版本（IE6\7\8）不支持
-		if (/MSIE (9.0|8.0|7.0|6.0)/.test(navigator.userAgent)) {
-			document.getElementsByTagName('body')[0].style.display='none';
-			alert('您的浏览器版本太低，请升级至IE10+或使用360、Chrome、FireFox、Safari等浏览器！');
-		}
-	</script>
+	<script type="text/javascript" src='javascript/jquery-3.1.1.slim.js'></script>
+	<script type="text/javascript" src='javascript/CVindex.js'></script>
 </body>
 </html>
