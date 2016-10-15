@@ -1,4 +1,4 @@
-@media all and (max-width: 768px){
+@media all and (max-width: 980px){
 	body{
 		min-width: 750px;
 	}
@@ -193,7 +193,7 @@
 		margin-left: 32px;
 	}
 	header>a{
-		top: 180px;
+		top: 185px;
 		text-indent: 10px;
 	}
 	header>div{
@@ -214,11 +214,17 @@
 	}
 	/* 导航 */
 	nav ul{
-		height: 52px;
+		height: 40px;
 	}
 	nav ul li{
-		width: 62px;
-		height: 45px;
+		width: 65px;
+		height: 40px;
+	}
+	nav ul li:first-child{
+		width: 85px;
+	}
+	nav ul li:last-child{
+		width: 75px;
 	}
 	/* 求职目标 */
 	#CareerObj ul li:nth-child(1){
@@ -226,7 +232,7 @@
 	}
 	/* 技能路线 */
 	.SkillList li:nth-child(4),.SkillList li:nth-child(6){
-		margin-right: 5px;
+		margin-right: 10px;
 	}
 	.SkillList li:nth-child(7){
 		width: 85px;
@@ -237,7 +243,7 @@
 		margin-right: 95px;
 	}
 	.SkillTime li:nth-child(2){
-		margin-right: 80px;
+		margin-right: 90px;
 	}
 	/* 职业生涯 */
 	#JobCareer ul li{
@@ -250,18 +256,12 @@
 }
 @media all and (max-width: 360px){
 	body{
-		min-width: 300px;
+		min-width: 305px;
 	}
 	.g-wrap{
-		width: 300px;
+		width: 305px;
 	}
-	h1{font-size: 16px;}
-	h2{font-size: 14px;}
-	strong,a,li,span,p{font-size: 12px;}
-	i{font-size: 10px;}
-	hr{
-		margin: 20px 0;
-	}
+	h1{font-size: 16px;font-weight: bold;}
 	/* 头部信息 */
 	header{
 		height: 300px;
@@ -275,42 +275,43 @@
 		font-size: 16px;
 	}
 	header>strong i{
-		text-indent: -5px;
+		text-indent: 0;
 	}
 	header>em{
-		top: 135px;
+		top: 130px;
 		margin-left: 20px;
 	}
 	header>a{
-		top: 160px;
-		text-indent: 5px;
+		top: 150px;
+		text-indent: 1px;
 	}
 	header>div{
-		left: 145px;
+		left: 135px;
 	}
 	header>div ul li{
 		margin: 0 10px 5px 0;
 	}
-
 	header>div ul li:nth-child(6){
 		margin: 0 10px 5px 0;
 	}
 	header>div ul li:nth-child(7),header>div ul li:nth-child(8){
 		display: inline-block;
-		margin-left: -140px;
+		margin-left: -180px;
 		width: 280px;
+		text-indent: 50px;
 	}
 	/* 导航 */
 	nav ul{
-		height: 108px;
+		height: 88px;
 	}
 	nav ul li{
-		width: 60px;
+		width: 80px;
+		margin-bottom: 10px;
 	}
 	nav ul li a{
 		font-size: 10px;
-		width: 60px;
-		height: 45px;
+		width: 80px;
+		height: 35px;
 	}
 	/* 求职目标 */
 	#CareerObj ul li{
