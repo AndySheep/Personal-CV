@@ -6,6 +6,6 @@ strong,a,li,span,p{font-size: 18px;}
 html,body,img{border:0;}
 li{list-style:none;}
 em{font-style: normal;}
-i{display: block;font-family: cursive;font-style: normal}
+i{display: block;font-family: cursive;font-style: normal;font-size: 18px;}
 a{text-decoration: none;font-style: normal}
 body{background:#fff;}

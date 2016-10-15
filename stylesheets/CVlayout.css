@@ -41,7 +41,7 @@ header>a{
 header>div{
 	position: absolute;
 	top: 0;
-	left: 240px;
+	left: 250px;
 }
 /* clearfix */
 .clearfix:after {
@@ -58,11 +58,6 @@ nav *:not(i){
 	display: inline-block;
 }
 /* /导航 */
-/* 求职目标 */
-#CareerObj{
-	margin-bottom: 50px;
-}
-/* /求职目标 */
 /* 技能路线 */
 #Skills ul li{
 	display: inline-block;

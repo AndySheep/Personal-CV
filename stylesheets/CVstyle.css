@@ -23,17 +23,55 @@ header>strong i{
 header>em{
 	margin-left: 30px;
 }
+header>em a{
+	font-weight: bolder;
+}
+header>div ul{
+	position: relative;
+}
 header>div ul li{
 	margin: 0 42px 10px 0;
 }
 header>div ul li:nth-child(5){
 	margin: 0 20px 10px 0;
 }
-header>div ul li:nth-child(6){
+header>div ul li:nth-child(6),header>div ul li:nth-child(7){
 	margin: 0 80px 10px 0;
 }
-header>div ul li:nth-child(7){
-	margin: 0 80px 10px 0;
+header>div ul li span{
+	margin-left: 30px;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #600;
+	-webkit-animation: shine 0.6s both ease infinite;
+	animation: shine 0.6s both ease infinite;
+}
+@-webkit-keyframes shine{
+	from{color: #600;}
+	to{color: #f00;}
+}
+@keyframes shine{
+	from{color: #600;}
+	to{color: #f00;}
+}
+header>div ul li:nth-child(9) img,header>div ul li:nth-child(10) img{
+	width: 220px;
+	height: 120px;
+}
+header>div ul li:nth-child(9),header>div ul li:nth-child(10){
+	display: none;
+	position: absolute;
+	top: 105px;
+	left: 400px;
+}
+header>*:not(div):hover,header>div>h1:hover,header>div>ul>li:hover{
+	transform: scale(1.08, 1.08)
+}
+header>div ul li:nth-child(7):hover header>div ul li:nth-child(9){
+	display: inline-block;
+}
+header>div ul li:nth-child(8):hover header>div ul li:nth-child(10){
+	display: inline-block;
 }
 /* /头部信息样式 */
 /* 导航样式 */
@@ -42,6 +80,7 @@ nav{
 }
 nav ul{
 	flex: 1;
+	height: 60px;
 }
 nav ul li{
 	width: 160px;
@@ -49,6 +88,68 @@ nav ul li{
 }
 nav ul:not(i){
 	text-align: center;
+}
+nav ul li:hover{
+	border: 2px solid #333;
+	box-shadow: 3px 3px 2px 1px #666,-3px -3px 2px 1px #666;
+	background-color: #ccc;
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
+	-webkit-animation: swingalways 1s both ease infinite;
+	animation: swingalways 1s both ease infinite;
+}
+@-webkit-keyframes swingalways {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes swingalways {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
 }
 /* /导航样式 */
 /* 求职目标 */
@@ -68,6 +169,21 @@ nav ul:not(i){
 }
 .SkillTime li:nth-child(2){
 	margin-right: 138px;
+}
+.Map{
+	height: 10px;
+	background-image: linear-gradient(to right,#ccc,#333);
+	border-radius: 0 10px 10px 0;
+	-webkit-animation: long 5s both linear infinite;
+	animation: long 5s both linear infinite;
+}
+@-webkit-keyframes long{
+	from{width: 0;}
+	to{width: 100%;}
+}
+@keyframes long{
+	from{width: 0;}
+	to{width: 100%;}
 }
 /* /技能路线 */
 /* 职业生涯 */
