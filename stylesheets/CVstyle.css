@@ -192,6 +192,10 @@ nav ul li:hover{
 #JobCareer ul li:first-child{
 	margin-right: 40px;
 }
+.Map.Career{
+	-webkit-animation-delay: 1s;
+	animation-delay: : 1s;
+}
 /* /职业生涯 */
 /* 项目案例 */
 #ProjectCase ul li{

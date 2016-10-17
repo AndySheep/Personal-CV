@@ -264,7 +264,7 @@
 	h1{font-size: 16px;font-weight: bold;}
 	/* 头部信息 */
 	header{
-		height: 300px;
+		height: 320px;
 	}
 	header>img{
 		width: 60px;
@@ -295,10 +295,13 @@
 	header>div ul li:nth-child(6){
 		margin: 0 10px 5px 0;
 	}
+	header>div ul li:nth-child(2),header>div ul li:nth-child(3),header>div ul li:nth-child(5){
+		margin-right: 80px;
+	}
 	header>div ul li:nth-child(7),header>div ul li:nth-child(8){
 		display: inline-block;
 		margin-left: -180px;
-		width: 280px;
+		width: 300px;
 		text-indent: 50px;
 	}
 	/* 导航 */
