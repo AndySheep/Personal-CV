@@ -1,9 +1,7 @@
 /* 整体边框样式 */
 .g-wrap{
-	border-width: 0 2px;
-	border-style: solid;
-	border-color: #333;
-	box-shadow: 2px 0 3px 3px #666,-2px 0 3px 3px #666;
+	border: 0 5px solid #333;
+	box-shadow: 2px 0 5px 5px #666,-2px 0 3px 3px #666;
 }
 /* /整体边框样式 */
 /* 头部信息样式 */
