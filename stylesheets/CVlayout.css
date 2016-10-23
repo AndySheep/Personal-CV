@@ -5,7 +5,7 @@ body{
 .g-wrap{
 	margin: 0 auto;
 	width: 1000px;
-	padding: 8px;
+	padding: 10px;
 }
 hr{
 	margin: 40px 0;
@@ -14,34 +14,13 @@ hr{
 /* 头部信息 */
 header{
 	position: relative;
-	height: 320px;
 }
-header>img{
-	width: 120px;
-	border-radius: 50%;
+.header-contact{
+	float: left;
+	width: 220px;
 }
-header *:not(i){
-	display: inline-block;
-}
-header>strong{
-	position: absolute;
-	top: 200px;
-	left: 0;
-}
-header>em{
-	position: absolute;
-	top: 260px;
-	left: 0;
-}
-header>a{
-	position: absolute;
-	top: 285px;
-	left: 0;
-}
-header>div{
-	position: absolute;
-	top: 0;
-	left: 250px;
+.header-info{
+	margin-left: 240px;
 }
 /* clearfix */
 .clearfix:after {
@@ -52,6 +31,12 @@ header>div{
    clear: both;
 }
 .clearfix {zoom: 1;} /* 针对 IE 不支持 :after */
+.header-contact *{
+	display: block;
+}
+.header-info *:not(i){
+	display: inline-block;
+}
 /* /头部信息 */
 /* 导航 */
 nav *:not(i){

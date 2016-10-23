@@ -23,4 +23,13 @@ $(function () {
 	});
 	//求职目标
 	$('nav').find('li').addClass('animated tada');
+	//自我评价
+	var Cer=$('#SelfAssessment'),
+		cerLi=Cer.find('li:eq(0)'),
+		cerPng=Cer.find('li:eq(2)');
+	cerLi.hover(function(){
+		cerPng.show().addClass('animated fadeIn');
+	},function(){
+
+	});
 });

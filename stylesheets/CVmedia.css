@@ -4,39 +4,36 @@
 	}
 	.g-wrap{
 		width: 750px;
-		padding: 2px;
+		padding: 10px;
 	}
-	h1{font-size: 26px;}
-	h2{font-size: 20px;}
-	strong,a,li,span,p{font-size: 14px;}
-	i{font-size: 14px;}
+	h1{
+		font-size: 26px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	strong,a,li,span,p{
+		font-size: 16px;
+	}
+	i{
+		font-size: 16px;
+	}
 	hr{
 		margin: 30px 0;
 	}
 	/* 头部信息 */
-	header{
-		height: 300px;
+	.header-info{
+		margin-left: 220px;
 	}
-	header>strong i{
-		text-indent: -1px;
+	.header-info ul li{
+		margin-right: 20px;
 	}
-	header>em{
-		top: 250px;
-		margin-left: 40px;
+	.header-info img{
+		width: 200px;
 	}
-	header>strong{
-		top: 190px;
-	}
-	header>a{
-		top: 275px;
-		text-indent: 8px;
-	}
-	header>div{
-		left: 190px;
-	}
-	header>div ul li:nth-child(9),header>div ul li:nth-child(10){
-		top: 100px;
-		left: 300px;
+	.header-info ul li:nth-child(9),.header-info ul li:nth-child(10){
+		top: 120px;
+		left: 330px;
 	}
 	/* 导航 */
 	nav ul{
@@ -44,294 +41,161 @@
 	}
 	nav ul li{
 		width: 130px;
-		height: 40px;
+		height: 45px;
 	}
 	/* 技能路线 */
-	.SkillTime li:nth-child(1){
-		margin-right: 130px;
-	}
-	.SkillTime li:nth-child(2){
-		margin-right: 115px;
+	#Skills li{
+		width: 240px;
 	}
 	/* 职业生涯 */
 	#JobCareer ul li{
 		width: 240px;
 	}
 	#JobCareer ul li:first-child{
-		margin-right: 10px;
+		padding-right: 1px;
 	}
 	/* 项目案例 */
 	#ProjectCase ul li p{
-		line-height: 22px;
+		line-height: 24px;
 	}
 	/* 自我评价 */
 	#SelfAssessment p{
-		line-height: 22px;
+		line-height: 24px;
 	}
 	#SelfAssessment ul li{
 		margin-bottom: 10px;
+	}
+	#SelfAssessment ul li img{
+		width: 30%;
+		height: 200px;
+		margin: 0 10px;
 	}
 }
 @media all and (max-width: 640px){
 	body{
-		min-width: 610px;
+		min-width: 440px;
 	}
 	.g-wrap{
-		width: 610px;
-	}
-	h1{font-size: 22px;}
-	h2{font-size: 16px;}
-	strong,a,li,span,p{font-size: 12px;}
-	i{font-size: 12px;}
-	hr{
-		margin: 20px 0;
+		width: 440px;
 	}
 	/* 头部信息 */
-	header{
-		height: 260px;
+	.header-contact{
+		width: 200px;
 	}
-	header>img{
-		width: 100px;
+	.header-contact img{
+		width: 120px;
 	}
-	header>strong{
-		top: 160px;
-		margin-left: 52px;
+	.header-info{
+		margin-left: 200px;
 	}
-	header>strong i{
-		text-indent: 2px;
+	.header-info ul li{
+		margin-bottom: 8px;
 	}
-	header>em{
-		top: 210px;
-		margin-left: 40px;
+	.header-info ul li:nth-child(7),.header-info ul li:nth-child(8){
+		text-indent: -185px;
 	}
-	header>a{
-		top: 235px;
-		text-indent: 10px;
-	}
-	header>div{
-		left: 160px;
-	}
-	header>div ul li{
-		margin: 0 20px 5px 0;
-	}
-	header>div ul li:nth-child(9) img,header>div ul li:nth-child(10) img{
-		width: 150px;
-		height: 80px;
-	}
-	header>div ul li:nth-child(9),header>div ul li:nth-child(10){
-		top: 80px;
-		left: 260px;
+	.header-info .shine,.header-info ul li:nth-child(9),.header-info ul li:nth-child(10){
+		display: none!important;
 	}
 	/* 导航 */
 	nav ul{
-		height: 40px;
+		height: 100px;
 	}
 	nav ul li{
-		width: 100px;
-		height: 30px;
+		margin-bottom: 15px;
 	}
 	/* 技能路线 */
-	.SkillList li:nth-child(4),.SkillList li:nth-child(6){
+	#Skills li{
+		width: 140px;
+	}
+	#Skills ul li:first-child{
 		margin-right: 10px;
+		word-wrap: break-word;
 	}
-	.SkillTime li:nth-child(1){
-		margin-right: 100px;
-	}
-	.SkillTime li:nth-child(2){
-		margin-right: 85px;
-	}
-	/* 职业生涯 */
-	#JobCareer ul li{
-		width: 240px;
-	}
-	#JobCareer ul li:first-child{
-		margin-right: 10px;
-	}
-	/* 项目案例 */
-	#ProjectCase ul li p{
-		line-height: 22px;
-	}
-	/* 自我评价 */
-	#SelfAssessment p{
-		line-height: 22px;
-	}
-	#SelfAssessment ul li{
-		margin-bottom: 10px;
-	}
-}
-@media all and (max-width: 480px){
-	body{
-		min-width: 400px;
-	}
-	.g-wrap{
-		width: 400px;
-	}
-	h1{font-size: 18px;}
-	h2{font-size: 14px;}
-	strong,a,li,span,p{font-size: 12px;}
-	i{font-size: 10px;}
-	hr{
-		margin: 20px 0;
-	}
-	/* 头部信息 */
-	header{
-		height: 260px;
-	}
-	header>img{
-		width: 80px;
-	}
-	header>strong{
-		top: 120px;
-		margin-left: 48px;
-		font-size: 18px;
-	}
-	header>strong i{
-		text-indent: -2px;
-	}
-	header>em{
-		top: 160px;
-		margin-left: 32px;
-	}
-	header>a{
-		top: 185px;
-		text-indent: 10px;
-	}
-	header>div{
-		left: 150px;
-	}
-	header>div ul li{
-		margin: 0 10px 5px 0;
-	}
-
-	header>div ul li:nth-child(6){
-		margin: 0 10px 5px 0;
-	}
-	header>div ul li:nth-child(9) img,header>div ul li:nth-child(10) img{
-		display: none;
-	}
-	header>div ul li span{
-		display: none;
-	}
-	/* 导航 */
-	nav ul{
-		height: 40px;
-	}
-	nav ul li{
-		width: 65px;
-		height: 40px;
-	}
-	nav ul li:first-child{
-		width: 85px;
-	}
-	nav ul li:last-child{
-		width: 75px;
-	}
-	/* 求职目标 */
-	#CareerObj ul li:nth-child(1){
-		margin-right: 20px;
-	}
-	/* 技能路线 */
-	.SkillList li:nth-child(4),.SkillList li:nth-child(6){
-		margin-right: 10px;
-	}
-	.SkillList li:nth-child(7){
-		width: 85px;
-		height: 32px;
-		overflow: hidden;
-	}
-	.SkillTime li:nth-child(1){
-		margin-right: 95px;
-	}
-	.SkillTime li:nth-child(2){
-		margin-right: 90px;
+	#Skills ul li:last-child{
+		margin-left: -10px;
 	}
 	/* 职业生涯 */
 	#JobCareer ul li{
 		width: 150px;
 		word-break: break-all;
 	}
-	#JobCareer ul li{
-		margin-right: 8px;
+	#JobCareer ul li:first-child{
+		margin-right: 10px;
+	}
+	#JobCareer ul li:last-child{
+		margin-left: 10px;
+	}
+	/* 自我评价 */
+	#SelfAssessment ul li img{
+		width: 80%;
+		margin: 10px auto;
 	}
 }
 @media all and (max-width: 360px){
 	body{
-		min-width: 305px;
+		min-width: 100%;
 	}
 	.g-wrap{
-		width: 305px;
+		width: 100%;
 	}
-	h1{font-size: 16px;font-weight: bold;}
+	h1{
+		font-size: 22px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	strong,a,li,span,p{
+		font-size: 14px;
+	}
+	i{
+		font-size: 14px;
+	}
 	/* 头部信息 */
-	header{
-		height: 300px;
+	.header-contact{
+		width: 120px;
 	}
-	header>img{
-		width: 60px;
+	.header-contact>a{
+		font-size: 11px;
 	}
-	header>strong{
-		top: 95px;
-		margin-left: 40px;
-		font-size: 16px;
+	.header-contact img{
+		width: 90px;
 	}
-	header>strong i{
-		text-indent: 0;
+	.header-info{
+		margin-left: 130px;
 	}
-	header>em{
-		top: 130px;
-		margin-left: 20px;
-	}
-	header>a{
-		top: 150px;
-		text-indent: 1px;
-	}
-	header>div{
-		left: 135px;
-		width: 170px;
-	}
-	header>div ul li{
-		margin: 0 10px 5px 0;
-	}
-	header>div ul li:nth-child(6){
-		margin: 0 10px 5px 0;
-	}
-	header>div ul li:nth-child(2),header>div ul li:nth-child(3),header>div ul li:nth-child(5){
+	.header-info ul li:nth-child(2),.header-info ul li:nth-child(3){
 		margin-right: 80px;
 	}
-	header>div ul li:nth-child(7),header>div ul li:nth-child(8){
-		display: inline-block;
-		margin-left: -180px;
-		width: 300px;
-		text-indent: 50px;
+	.header-info ul li:nth-child(7),.header-info ul li:nth-child(8){
+		text-indent: -120px;
 	}
 	/* 导航 */
 	nav ul{
-		height: 88px;
-	}
-	nav ul li{
-		width: 80px;
-		margin-bottom: 10px;
-	}
-	nav ul li a{
-		font-size: 10px;
-		width: 80px;
-		height: 35px;
+		height: 160px;
 	}
 	/* 求职目标 */
 	#CareerObj ul li{
 		word-break: break-all;
 	}
 	/* 技能路线 */
-	.SkillList li:nth-child(7){
-		display: none!important;
+	#Skills li{
+		width: 100px;
 	}
-	.SkillTime li:nth-child(2){
-		display: none!important;
+	#Skills ul li:first-child{
+		margin-right: 0;
+	}
+	#Skills ul li:last-child i{
+		margin-left: 0;
+	}
+	#Skills ul li:last-child i{
+		display: none;
 	}
 	/* 职业生涯 */
 	#JobCareer ul li{
-		width: 155px;
+		width: 30%;
+		margin-right: 0;
+		font-size: 12px;
 		word-break: break-all;
-		margin-right: 3px;
 	}
 }

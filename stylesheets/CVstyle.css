@@ -1,39 +1,37 @@
 /* 整体边框样式 */
 .g-wrap{
-	border: 0 5px solid #333;
+/* 	border-width: 0 3px;
+	border-style: solid;
+	border-color: #333; */
 	box-shadow: 2px 0 5px 5px #666,-2px 0 3px 3px #666;
 }
 /* /整体边框样式 */
 /* 头部信息样式 */
-header>img{
-	margin-left: 30px;
+.header-contact *{
+	display: table;
+	margin: 3px auto;
 }
-header>strong{
-	font-size: 22px;
-	margin-left: 62px;
+.header-contact img{
+	margin-bottom: 10px;
+	width: 150px;
+	border-radius: 50%;
 }
-header>strong i{
-	text-indent: -14px;
+.header-contact strong,.header-contact em a{
+	font-weight: bold;
 }
-header>em{
-	margin-left: 30px;
+.header-contact strong{
+	text-indent: 10px;
 }
-header>em a{
-	font-weight: bolder;
+.header-contact strong i{
+	text-indent: -10px;
 }
-header>div ul{
+.header-info ul{
 	position: relative;
 }
-header>div ul li{
-	margin: 0 42px 10px 0;
+.header-info ul li{
+	margin: 0 42px 20px 0;
 }
-header>div ul li:nth-child(5){
-	margin: 0 20px 10px 0;
-}
-header>div ul li:nth-child(6),header>div ul li:nth-child(7){
-	margin: 0 80px 10px 0;
-}
-header>div ul li span{
+.shine{
 	margin-left: 30px;
 	font-size: 16px;
 	font-weight: bolder;
@@ -49,24 +47,20 @@ header>div ul li span{
 	from{color: #600;}
 	to{color: #f00;}
 }
-header>div ul li:nth-child(9) img,header>div ul li:nth-child(10) img{
-	width: 220px;
-	height: 120px;
+.header-info img{
+	width: 245px;
 }
-header>div ul li:nth-child(9),header>div ul li:nth-child(10){
+.header-info ul li:nth-child(6),.header-info ul li:nth-child(7){
+	margin-right: 80px;
+}
+.header-info ul li:nth-child(9),.header-info ul li:nth-child(10){
 	display: none;
 	position: absolute;
-	top: 105px;
-	left: 400px;
+	top: 100px;
+	left: 410px;
 }
-header>*:not(div):hover,header>div>h1:hover,header>div>ul>li:hover{
+.header-contact *:not(i):hover,.header-info *:not(ul):not(i):hover{
 	transform: scale(1.08, 1.08)
-}
-header>div ul li:nth-child(7):hover header>div ul li:nth-child(9){
-	display: inline-block;
-}
-header>div ul li:nth-child(8):hover header>div ul li:nth-child(10){
-	display: inline-block;
 }
 /* /头部信息样式 */
 /* 导航样式 */
@@ -85,7 +79,7 @@ nav ul:not(i){
 	text-align: center;
 }
 nav ul li:hover{
-	border: 2px solid #333;
+	border: 1px solid #333;
 	box-shadow: 3px 3px 2px 1px #666,-3px -3px 2px 1px #666;
 	background-color: #ccc;
 	-webkit-transform-origin: top center;
@@ -148,6 +142,9 @@ nav ul li:hover{
 }
 /* /导航样式 */
 /* 求职目标 */
+#CareerObj ul li{
+	margin-bottom: 10px;
+}
 #CareerObj ul li:nth-child(1),#CareerObj ul li:nth-child(2){
 	display: inline-block;
 }
@@ -156,14 +153,15 @@ nav ul li:hover{
 }
 /* /求职目标 */
 /* 技能路线 */
-.SkillList li:nth-child(4),.SkillList li:nth-child(6){
-	margin-right: 30px;
+#Skills li{
+	width: 300px;
+	vertical-align: top;
 }
-.SkillTime li:nth-child(1){
-	margin-right: 152px;
+#Skills ul li:first-child{
+	margin-right: 35px;
 }
-.SkillTime li:nth-child(2){
-	margin-right: 138px;
+#Skills ul li:last-child{
+	margin-left: -60px;
 }
 .Map{
 	height: 10px;
@@ -217,5 +215,21 @@ nav ul li:hover{
 }
 #SelfAssessment ul li{
 	margin-bottom: 20px;
+}
+#SelfAssessment ul li span{
+	margin-left: 10px;
+}
+#SelfAssessment ul li:last-child{
+	display: none;
+	width: 100%;
+}
+#SelfAssessment ul li img{
+	display: inline-block;
+	width: 30%;
+	height: 200px;
+	margin: 0 15px;
+}
+#SelfAssessment ul li img:hover{
+	transform: scale(1.1, 1.1)
 }
 /* /自我评价 */
